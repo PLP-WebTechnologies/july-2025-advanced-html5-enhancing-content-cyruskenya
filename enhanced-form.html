@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #004466;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    main {
+      padding: 2em;
+    }
+    section {
+      margin-bottom: 3em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.75em;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 1.5em;
+      border: 1px solid #aaa;
+      padding: 1em;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.25em;
+    }
+    .form-section {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to My Showcase Page</h1>
+  <p>Featuring Lists, Tables, Media, and a Complete HTML5 Form</p>
+</header>
+
+<main>
+  <!-- List Section -->
+  <section>
+    <h2>Our Core Values</h2>
+    <ul>
+      <li>Integrity</li>
+      <li>Innovation</li>
+      <li>Customer Focus</li>
+    </ul>
+
+    <h3>Steps to Join Us</h3>
+    <ol>
+      <li>Fill out the form below</li>
+      <li>Wait for a confirmation email</li>
+      <li>Get started with onboarding</li>
+    </ol>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Upcoming Events</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Event</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-09-01</td>
+          <td>Annual Meetup</td>
+          <td>Nairobi Kenya</td>
+        </tr>
+        <tr>
+          <td>2025-10-15</td>
+          <td>Workshop: Future Tech</td>
+          <td>kisumu </td>
+        </tr>
+        <tr>
+          <td>2025-12-05</td>
+          <td>End-of-Year Gala</td>
+          <td>Mombasa</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>Media Gallery</h2>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=400&q=40"/>
+      <figcaption>Our team during the last annual event.</figcaption>
+    </figure>
+
+    <h3>Theme Song</h3>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Form Section -->
+  <section class="form-section">
+    <h2>Join Our Community</h2>
+    <form action="/submit" method="post" novalidate>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="your name" autocomplete="name" />
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email" />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="^\+?[0-9\s\-]{7,15}$" placeholder="+123456789" autocomplete="tel" />
+
+        <label for="dob">Date of Birth *</label>
+        <input type="date" id="dob" name="dob" required />
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username *</label>
+        <input type="text" id="username" name="username" required minlength="4" pattern="^[a-zA-Z0-9_]+$" placeholder="your_username" />
+
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="Enter a secure password" />
+
+        <label for="profilePic">Upload Profile Picture</label>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*" />
+
+        <label for="bio">Short Bio</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="membership">Membership Type *</label>
+        <select id="membership" name="membership" required>
+          <option value="">--Please choose--</option>
+          <option value="basic">Basic</option>
+          <option value="premium">Premium</option>
+          <option value="vip">VIP</option>
+        </select>
+
+        <label>Subscribe to Newsletter:</label>
+        <label><input type="radio" name="newsletter" value="yes" required> Yes</label>
+        <label><input type="radio" name="newsletter" value="no"> No</label>
+
+        <label><input type="checkbox" name="terms" required> I agree to the terms and conditions *</label>
+
+      </fieldset>
+
+      <input type="submit" value="Submit Application" />
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Enhanced HTML5 Page. plp web development assignment 2.</p>
+</footer>
+
+</body>
+</html>
